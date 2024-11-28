@@ -4,7 +4,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.PriorityQueue;
 
-public class KnapsackSolverBacktracking {
+public class EstoqueSolverBacktracking {
     private static final int MAX_QUEUE_SIZE = 1000;
     private static final int MAX_DEPTH = 50;
 

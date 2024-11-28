@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class KnapsackTest {
+public class EstoqueTest {
     public static void main(String[] args) {
         
         int capacity = 50;
-        int numberOfItems = 100;
+        int numberOfItems = 80;
         
         List<Item> items = generateRandomItems(numberOfItems, 5, 50, 0.5, 300.0);
 
@@ -17,7 +17,7 @@ public class KnapsackTest {
         
         Estoque estoque = new Estoque(capacity, items);
         
-        KnapsackSolverBacktracking solver = new KnapsackSolverBacktracking();
+        EstoqueSolverBacktracking solver = new EstoqueSolverBacktracking();
         EstadodoEstoque bestState = solver.solve(estoque);
 
         System.out.println("Melhor combinação de paletes para o estoque:");
